@@ -26,13 +26,13 @@ public class BooleanGames {
     /* Returns true if the instance variable, number, is odd; returns false
        otherwise; needs to be able to handle case when number is negative */
     public boolean isOdd() {
-        /* implement this method! */
+        return (Math.abs(number) % 2 != 0);
     }
 
     /* Returns true if the instance variable, number, is a multiple of x;
        returns false otherwise */
     public boolean isMultipleOf(int x) {
-        /* implement this method! */
+        return (number % x == 0);
     }
 
     /* Returns true if the ones digit of the instance variable, number, is equal
@@ -44,7 +44,7 @@ public class BooleanGames {
        PRECONDITION:  num >= 0
      */
     public boolean isOnesDigit(int num) {
-        /* implement this method! */
+        return (Math.abs(number) % 10 == num);
     }
 }
 
